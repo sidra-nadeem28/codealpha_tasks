@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sidra's Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <!-- Navigation bar -->
+    <div id="navbar">
+      <span id="logo">✦ Sidra</span>
+      <div id="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+
+    <!-- Home / Hero section -->
+    <div id="home">
+      <div id="hero-content">
+        <p id="hero-greeting">Hello, I'm</p>
+        <h1 id="hero-name">Sidra Nadeem Ansari</h1>
+        <p id="hero-subtitle">Beginner Software Developer &amp; Computer Science Student</p>
+        <div id="hero-buttons">
+          <button class="btn-main" onclick="document.getElementById('projects').scrollIntoView({behavior:'smooth'})">See My Work</button>
+          <button class="btn-outline" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Say Hello </button>
+        </div>
+        <p id="message-text"></p>
+      </div>
+      <div id="hero-image">
+        <div id="avatar-circle">SNA</div>
+      </div>
+    </div>
+
+    <!-- About section -->
+    <div id="about">
+      <h2 class="section-title">About Me</h2>
+      <p class="section-subtitle">A little bit about who I am</p>
+
+      <div id="about-grid">
+        <div id="about-text">
+          <p>Hi! My name is <strong>Sidra</strong> I’m a Computer Science student passionate about creating smart, efficient solutions through technology. I have a growing interest in AI, software engineering, and building systems that solve real world problems. </p>
+          <p> I’m currently exploring tools and platforms that help me develop scalable and user focused applications. My goal is to turn ideas into meaningful digital products.</p>
+
+          <div id="tags">
+            <span class="tag tag-purple">HTML</span>
+            <span class="tag tag-pink">CSS</span>
+            <span class="tag tag-blue">JavaScript</span>
+            <span class="tag tag-pink">Python</span>
+            <span class="tag tag-green">Software Testing</span>
+            <span class="tag tag-purple">C Language</span>
+            <span class="tag tag-blue">Student</span>
+          </div>
+        </div>
+
+        <div id="skills-box">
+          <h3>My Skills</h3>
+
+          <p class="skill-label">Programming</p>
+          <div class="bar-bg">
+            <div class="bar-fill bar-purple" style="width: 70%">70%</div>
+          </div>
+
+          <p class="skill-label">Web development</p>
+          <div class="bar-bg">
+            <div class="bar-fill bar-pink" style="width: 50%">50%</div>
+          </div>
+
+          <p class="skill-label">AI Automation</p>
+          <div class="bar-bg">
+            <div class="bar-fill bar-blue" style="width: 30%">30%</div>
+          </div>
+
+          <p class="skill-label">Problem Solving</p>
+          <div class="bar-bg">
+            <div class="bar-fill bar-green" style="width: 80%">80%</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Projects section -->
+    <div id="projects">
+      <h2 class="section-title">My Projects</h2>
+      <p class="section-subtitle">Things I have built so far</p>
+
+      <div id="projects-grid">
+
+        <div class="project-card card-purple">
+          <div class="card-icon">🧮</div>
+          <h3>Calculator</h3>
+          <p>A simple calculator I made using HTML and JavaScript. It can do basic math!</p>
+          <div class="card-footer">
+            <span class="tech-tag">HTML</span>
+            <span class="tech-tag">JS</span>
+          </div>
+        </div>
+
+        <div class="project-card card-blue">
+          <div class="card-icon">🌐</div>
+          <h3>This Portfolio</h3>
+          <p>My first ever portfolio! I am really proud of how it turned out.</p>
+          <div class="card-footer">
+            <span class="tech-tag">HTML</span>
+            <span class="tech-tag">CSS</span>
+            <span class="tech-tag">JS</span>
+            <a href="#" class="card-link">View →</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Contact section -->
+    <div id="contact">
+      <h2 class="section-title">Contact Me</h2>
+      <p class="section-subtitle">I would love to hear from you!</p>
+
+      <div id="contact-box">
+        <div id="contact-info">
+          <div class="info-item">
+            <span class="info-icon">📧</span>
+            <span>sidra.nadeem.ansari2827@gmail.com</span>
+          </div>
+          <div class="info-item">
+            <span class="info-icon">📍</span>
+            <span>Pakistan</span>
+          </div>
+          <div class="info-item">
+            <span class="info-icon">🎓</span>
+            <span>Computer Science Student</span>
+          </div>
+        </div>
+
+        <div id="contact-form">
+          <input type="text" id="contact-name" placeholder="Your Name" /><br><br>
+          <input type="email" id="contact-email" placeholder="Your Email" /><br><br>
+          <textarea id="contact-msg" placeholder="Your message..." rows="5"></textarea><br><br>
+          <button class="btn-main" onclick="sendMessage()">Send Message 🚀</button>
+          <p id="form-response"></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div id="footer">
+      <p>Made with ❤️ by Sidra &copy; 2026</p>
+    </div>
+
+    <script src="script.js"></script>
+
+  </body>
+</html>
